@@ -1,0 +1,171 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #fff7df;
+}
+
+header {
+    background-color: #83280a;
+    color: white;
+    height: 3em;
+    top: 0%;
+    z-index: 1;
+    font-size: 1.1em;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+}
+
+header li {
+    float: right;
+    list-style-type: none;
+    display: flex;
+}
+
+header li:hover {
+    border: 1px solid #fff7df;
+    background-color: #fff7df;
+}
+
+
+header a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #521305;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #521305;
+    margin: 1em;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    color: #521305;
+    margin-bottom: 5px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+nav {
+    border: 0.4em solid #ec7d51;
+    border-radius: 3em;
+    width: 30%;
+    padding: 1.8em;
+    margin: 1em;
+    overflow: auto;
+    background-color: #ffe3d0;
+}
+
+.aciklama {
+    margin-bottom: 2em;
+    text-transform: capitalize;
+}
+
+.aciklama li {
+    list-style: circle;
+    padding: 5px;
+    line-height: 1.3em;
+
+}
+
+.ozellikler li {
+    list-style-type: square;
+    padding: 5px;
+    word-spacing: 3px;
+    line-height: 1.3em;
+}
+
+.properties {
+    width: 90%;
+    margin: auto;
+}
+
+.properties ul {
+    line-height: 1.8em;
+}
+
+@media screen and (max-width : 1024px) {
+    body {
+        background-color: #edebfa;
+    }
+
+    header {
+        background-color: #622569;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 45%;
+        border-color: #5b9aa0;
+        background-color: #d6c4eb;
+    }
+}
+
+@media screen and (max-width : 769px) {
+    body {
+        background-color: #b7d7e8;
+    }
+
+    header {
+        background-color: #4d5d8a;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 90%;
+        background-color: #f1e3dd;
+        border-color: #5a95b3;
+    }
+
+}
+
+@media screen and (max-width : 480px) {
+    body {
+        background-color: #f9d5e5;
+        max-width: 480px;
+    }
+
+    header {
+        background-color: #c83349;
+        width: auto;
+        height: auto;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    nav {
+        background-color: #eeac99;
+        border-color: #e06377;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 90%;
+    }
+}
